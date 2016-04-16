@@ -7,6 +7,7 @@
     <legend>Personal information:</legend>
     First name:<br>
     <input type="text" name="firstname" value=""><br>
+
     Last name:<br>
     <input type="text" name="lastname" value=""><br><br>
 
@@ -37,6 +38,16 @@
     <input type="submit" value="Submit">
   </fieldset>
 </form>
+
+<script type = "text/javascript">
+ // from textBoxes.html
+ function Update(){
+ var Name = document.getElementById("lastname");
+ var Type = document.getElementById("gametype");
+ var Level = document.getElementById("gametype");
+ txtOutput.value = "Hi there, " + Name + "!"
+ } // end sayHi
+</script>
 
 </body>
 </head>
