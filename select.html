@@ -1,13 +1,15 @@
+<!DOCTYPE html>
+<head>
 <body bgcolor = "#FFEFD5">
 
- <form action="action_page.php">
+ <form action="action_page.php" id="lineform">
   <fieldset>
     <legend>Personal information:</legend>
     First name:<br>
     <input type="text" name="firstname" value=""><br>
     Last name:<br>
     <input type="text" name="lastname" value=""><br><br>
-
+ 
 
 <table style="width:100%">
   <tr>
@@ -16,14 +18,14 @@
   </tr>
   <tr>
     <td>
-    <select>
+    <select name="gametype" form="lineform">
   <option value="shrub">Shrub</option>
   <option value="tree" selected>Tree</option>
   <option value ="harbour">Harbour</option>
 </select>
     </td>
     <td>
-      <select>
+      <select name="skilllevel" form="lineform">
   <option value="expert">expert</option>
   <option value="intermediate" selected>intermediate</option>
   <option value="beginner">beginner</option>
@@ -37,4 +39,5 @@
 </form> 
 	
 </body>
-
+</head>
+</html>
