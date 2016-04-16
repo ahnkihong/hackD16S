@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<body>
+  <!DOCTYPE html>
+  <style>h1 { color: #006400; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+
+
+  span { color: #9932CC; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: left; }
+
+
+  p { color: 	#4B0082; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; }
+
+
+  a { color: #c8c8c8; text-decoration: underline; }
+
+  a:link {color: #FF0000}
+  </style>
+
+  <script>
+  function Update()
+  {
+      var Time_KDE = 0 ;
+      var D=0;
+      var fn_KDE = document.getElementById("fn").value;
+      var ln_KDE = document.getElementById("ln").value;
+      var gt_KDE = document.getElementById("gt").value;
+      if(gt_KDE == "Shrub")
+      {
+          Time_KDE = Time_KDE + 25;
+      }else{
+        Time_KDE = Time_KDE + 40;
+      }
+      document.getElementById("result").innerHTML = D;
+
+  }
+  </script>
+
+<form>
+
+First Name <input type="text" id="fn" name="fn" />
+<p></p>Last Name <input type="text" id="ln" name="ln" />
+
+<p></p>Types of game:
+<p></p><input type="radio" name="Shrub" value="Shrub">Shrub<br>
+<p></p><input type="radio" name="Tree" value="Tree"> Tree<br>
+</form>
+<br />
+
+<p id="result" name="key">
+        <br />
+    </p>
+
+<form action="KDE.html">
+    <input type="Submit" value="Submit" onclick= "Update()">
+</form>
+
+
+</body>
+</html>
