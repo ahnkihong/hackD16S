@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<body bgcolor = "#FFEFD5">
+
+ <form id="lineform" action="AZD.html" method="get">
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value=""><br>
+    Last name:<br>
+    <input type="text" name="lastname" value=""><br><br>
+
+
+<table style="width:100%">
+  <tr>
+    <td>Game Type</td>
+    <td>Game Skill Level</td>
+  </tr>
+  <tr>
+    <td>
+    <select name="gametype" form="lineform">
+  <option value="shrub">Shrub</option>
+  <option value="tree" selected>Tree</option>
+  <option value ="harbour">Harbour</option>
+</select>
+    </td>
+    <td>
+      <select name="skilllevel" form="lineform">
+  <option value="expert">expert</option>
+  <option value="intermediate" selected>intermediate</option>
+  <option value="beginner">beginner</option>
+</select>
+    </td>
+</tr>
+</table>
+<p></p>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+</body>
+</head>
+</html>
